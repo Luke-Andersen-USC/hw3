@@ -16,6 +16,8 @@ struct Node
 };
 
 
+
+
 /**
  * Given a linked list pointed to by head, creates two lists
  * where all values less than or equal to the pivot value are
@@ -83,6 +85,30 @@ Node* llfilter(Node* head, Comp pred)
     //*********************************************
     // Provide your implementation below
     //*********************************************
+		Node* tempHead = NULL;
+	if(head == NULL)
+	{
+		return NULL;
+	}
+	else
+	{
+		tempHead = llfilter(head->next, pred);
+	}
+
+	if(pred(head->val))
+	{		
+		delete head;
+
+		return tempHead;
+		
+	}  
+	else
+	{
+			head->next = tempHead;
+		tempHead = head;
+		
+		return tempHead;
+	}
 
 
 }

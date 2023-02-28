@@ -69,8 +69,6 @@ void dealloc(Node* head)
 
 
 
-
-
 int main(int argc, char* argv[])
 {
     if(argc < 2) {
@@ -87,9 +85,18 @@ int main(int argc, char* argv[])
 
     // Test out your linked list code
 
-
+    //Node* smaller = NULL;
+    //Node* bigger = NULL;
 
     
+		//llpivot(head, smaller, bigger, 20);
+    //print(smaller);
+    //print(bigger);
+
+		
+
+	//llfilter(head, ifEven);
+
     return 0;
 
 }

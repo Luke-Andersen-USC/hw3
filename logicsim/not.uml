@@ -1,3 +1,11 @@
+the size of the inputs: 2
+the size of the inputs: 2
+the size of the inputs: 2
+the size of the inputs: 2
+the size of the inputs: 2
+the size of the inputs: 2
+the size of the inputs: 2
+the size of the inputs: 2
 @startuml
 binary "input" as W0
 binary "output" as W1
