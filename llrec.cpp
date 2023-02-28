@@ -1,5 +1,5 @@
 #include "llrec.h"
-#include <iostream>
+
 
 using namespace std;
 
@@ -13,7 +13,6 @@ void llpivot(Node *&head, Node *&smaller, Node *&larger, int pivot)
 	
 	if(head != NULL)
 	{
-		cout << "Going in..." << endl;
 		llpivot(head->next, smaller, larger, pivot);
 	}
 	else
@@ -25,12 +24,11 @@ void llpivot(Node *&head, Node *&smaller, Node *&larger, int pivot)
 
 	if(head->val > pivot)
 	{
-		cout << "Here!: " << head->val << endl;
 		Node* temp = NULL;
 		//going backwards - setting next to next element, else will be NULL 
 		if(larger != NULL)
 		{
-			cout << "achieved!" << endl;
+
 			temp = larger;
 		}
 		
@@ -39,11 +37,9 @@ void llpivot(Node *&head, Node *&smaller, Node *&larger, int pivot)
 	}
 	else
 	{
-		cout << "Here!: " << head->val << endl;
 		Node* temp = NULL;
 		if(smaller != NULL)
 		{
-			cout << "achieved!" << endl;
 			temp = smaller;
 		}
 
